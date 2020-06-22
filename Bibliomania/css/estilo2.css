@@ -1,0 +1,268 @@
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/*menu*/
+.menu{ 
+    background: #1F1715;
+
+}
+.menu .menu-list, .menu .sub-menu{
+    list-style: none;               
+}
+ 
+.menu a{    
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing:0.2em;
+}
+
+.menu > .menu-list > li{ /* pra deixar os li na horizontal */
+    float: left;
+    position: relative;
+}
+  
+.menu > .menu-list > li > a {  
+    padding: 20px;
+    margin: 0 5px;
+    background: #1F1715;
+}
+ 
+.menu > .menu-list > li:hover a { 
+    background: #444;
+}
+
+.menu > .menu-list > li:hover > .sub-menu {  
+    display: block;
+}
+  
+.menu > .menu-list > li > .sub-menu {  
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    background: #444;
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+}
+
+.menu > .menu-list > li > .sub-menu > li > a { 
+      padding: 10px 20px;
+}
+ 
+.menu:after { 
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+body{
+    background-image: url(../img/fundo-de-papel.jpeg);
+    -webkit-background-size: cover;   
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.logo{
+    position: absolute;
+    height:	170px;
+    margin-left: 20px;
+}
+
+ /*pag inters*/
+.int-meio{
+    text-align: center;
+    padding-top: 70px;
+}
+h1{
+    font-family: serif;
+    font-size: 45px;
+    color:  #453430;
+    text-align: center;
+}
+.int{
+    padding-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+    list-style:none ;
+}
+.int li{
+    margin-bottom: 50px;
+}
+
+ /*botão voltar ao topo*/
+#subir{
+	position: fixed;;
+    bottom: 0px;
+    right:15px;
+    color: #D9C6A3;
+    text-shadow: #1F1715 0.1em 0.1em 0.3em, #1F1715 0.1em 0.1em 0.3em , #1F1715 0.1em 0.1em 0.3em, #1F1715 0.1em 0.1em 0.3em , #1F1715 0.1em 0.1em 0.3em ;
+    font-size: 20px;
+    text-decoration: none;
+}
+#subir img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+/*pag sobre*/
+.s-meio{
+    text-align: center;
+    padding-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 100px; /*olhar se precisa de alteração*/
+}
+h2{
+    margin-top: 100px;
+    margin-bottom: 25px;
+    font-family: serif;
+    font-size: 25px;
+}
+.n p{
+    text-align: left;
+}
+
+/*rodapé*/
+footer{
+    padding:20px 0;	
+    background-color: #1F1715;
+    background-size: 100%;
+    color: #867c67;
+}
+footer	{
+    clear: both;
+}
+footer.container{
+    position: absolute;
+    bottom: 0;
+}
+.rs{
+    display: inline;
+    padding-left: 400px;
+}
+.rs img{
+    margin-left: 10px;
+    width: 3%;
+}
+/*pag sagas e gêneros */
+.st-meio {
+    padding-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 100px;
+}
+.st img{
+    float: left;
+    width:150px;
+    height:200px;
+    margin-right: 10px;
+}
+.st h2, a {
+    text-decoration:none;
+    color:#312927;
+    text-align: center;
+}
+.st  div{
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+/*pag de gen*/
+.gen-meio{
+    padding-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 100px;
+}
+.gen-meio img{
+    float: left;
+    width:150px;
+    height:200px;
+    margin-right: 10px;
+}
+.gen-meio h2,a{
+    text-decoration:none;
+    color:#312927;
+    text-align: center;
+}
+.gen-meio div{
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+}
+
+.ns-meio{
+    padding-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 100px;
+}
+.ns-meio p{
+    margin-top: 30px;
+}
+.ns-meio h2{
+    color: #1F1715;
+    font-size: 30px;
+}
+.livros-o img{
+    float: left;
+    width:150px;
+    height:200px;
+    margin-right: 10px;
+}
+.ns-meio div {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+.livros-o h2 , a{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+}
+.s-autor , .s-extra p {
+    text-align: left;
+}
+
+/*pag livro*/
+.cp-meio{
+    padding-top: 80px;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding-bottom: 100px;
+}
+
+.cp-meio .capa{
+    padding-left: 250px;
+    width:500px;
+    height:400px;
+}
+.cp-meio a{
+    font-size: 15px;
+    color: #3b2d29;
+}
+.s-autor , .s-extra p{
+    padding-bottom: 30px;
+}
+.sinopse {
+    padding-top: 10px;
+}
+.s-extra img{
+    width:500px;
+    height:300px;
+    margin-left: 110px;
+}
+

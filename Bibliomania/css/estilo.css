@@ -1,0 +1,156 @@
+  /* Reset CSS */
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+body{
+    background-image: url(../img/fundo.png);
+    background-size: 100% 650px;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+  /*cabeçalho*/
+.titulo{
+    position: absolute;
+    padding-top: 200px;
+    padding-left: 500px;
+    text-align: center;
+}
+.titulo h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace,serif;
+    font-weight: normal;
+}
+
+  /*menu*/
+.menu{ /* Fundo do menu */
+    background: #1F1715;
+
+}
+.menu .menu-list, .menu .sub-menu{/* Remove as bolinhas do lado das listas */
+    list-style: none;               
+}
+ 
+.menu a{    /* Configuração dos links do menu */
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing:0.2em;
+}
+
+.menu > .menu-list > li{ /* pra deixar os <li> na horizontal */
+    float: left;
+    position: relative;
+}
+  
+.menu > .menu-list > li > a {  /* Configura os links do menu principal */
+    padding: 20px;
+    margin: 0 5px;
+    background: #1F1715;
+}
+ 
+.menu > .menu-list > li:hover a { /* Configura o fundo do menu principal quando com mouse hover */
+    background: #444;
+}
+
+.menu > .menu-list > li:hover > .sub-menu {  /* Mostra o submenu no evento de mouse hover */
+    display: block;
+}
+  
+.menu > .menu-list > li > .sub-menu {  /* Configura o estilo do submenu */
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    background: blue;
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+}
+
+.menu > .menu-list > li > .sub-menu > li > a { /* Configura os links do submenu */
+      padding: 10px 20px;
+}
+ 
+.menu:after { /* Clearfix para o menu */
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/*conteúdo principal*/
+
+h2{
+    margin-bottom: 20px;
+    font-family: serif ;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #453430;
+}
+.li-meio{
+    padding-top: 610px;
+    text-align: center;
+    margin-left: 170px;
+    margin-right: 170px;
+    padding-bottom: 100px;
+}
+.li-meio div img{
+    width:200px;
+    height:250px;
+}
+
+.li-meio a{
+    display: inline-block;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+/*voltar ao topo*/
+#subir{
+	position:fixed;
+	bottom:0px;
+    right: 15px;
+    color: #D9C6A3;
+    text-shadow: #1F1715 0.1em 0.1em 0.3em, #1F1715 0.1em 0.1em 0.3em , #1F1715 0.1em 0.1em 0.3em, #1F1715 0.1em 0.1em 0.3em , #1F1715 0.1em 0.1em 0.3em ;
+    font-size: 20px;
+    text-decoration: none;
+}
+#subir img{
+    width: 30px;
+    margin-right: 5px;
+}
+
+/*rodapé*/  
+footer{
+    padding:20px 0;	
+    background-color: #1F1715;
+    background-size: 100%;
+    color: #867c67;
+}
+footer	{
+    clear: both;
+}
+footer.container{
+    position: absolute;
+    bottom: 0;
+}
+.rs{
+    display: inline;
+    padding-left: 400px;
+}
+.rs img{
+    margin-left: 10px;
+    width: 3%;
+}
+
